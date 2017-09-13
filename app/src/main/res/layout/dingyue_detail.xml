@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myTitle="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.txs.custom.CustomTitleActivity
+        android:id="@+id/custom_order"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        myTitle:leftSrc="@mipmap/add_bold"
+        myTitle:title="订阅">
+    </com.txs.custom.CustomTitleActivity>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/newsRefresh"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/newItem"
+            android:background="#eeeeee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

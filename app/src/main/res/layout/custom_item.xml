@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/item_sim_iv_pic"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                fresco:actualImageScaleType="centerInside"
+                fresco:roundAsCircle="true"
+                fresco:roundingBorderColor="@color/color_999999"
+                fresco:roundingBorderWidth="1dp"
+                />
+
+            <TextView
+                android:id="@+id/item_txt_left_title"
+                style="@style/txt_textColor_alert_msg_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/item_sim_iv_pic"
+                android:text="人民日报"/>
+
+
+            <TextView
+                android:id="@+id/item_txt_brief"
+                style="@style/txt_primary_text_disabled_material_light_11sp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="参与、沟通、记录、时代"/>
+
+            <CheckBox
+                android:id="@+id/item_ch_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/classify_btn_drawable"
+                android:button="@null"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/second_pager_bg"/>
+
+
+</RelativeLayout>

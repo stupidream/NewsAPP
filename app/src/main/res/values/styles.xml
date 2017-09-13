@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="style_nvi">
+        <item name="android:textColor">@color/color_nav</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="txt_primary_text_disabled_material_light_11sp">
+        <item name="android:textSize">11sp</item>
+        <item name="android:color">@color/primary_text_disabled_material_light</item>
+    </style>
+    <style name="txt_textColor_alert_msg_14sp">
+        <item name="android:textSize">14sp</item>
+        <item name="android:color">@color/textColor_alert_msg</item>
+    </style>
+
+    <style name="txt_textColor_alert_msg_16sp">
+        <item name="android:textSize">16sp</item>
+        <item name="android:color">@color/textColor_alert_msg</item>
+    </style>
+    <style name="SmallGreyTextView">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

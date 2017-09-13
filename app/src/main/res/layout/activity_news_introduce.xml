@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_news_introduce"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item="http://schemas.android.com/apk/res-auto"
+    xmlns:myTitle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_95_alpha">
+
+    <com.txs.custom.CustomTitleActivity
+        android:id="@+id/newsIntroduce_top_title"
+        style="@style/txt_textColor_alert_msg_16sp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        myTitle:orderSrc="@mipmap/add_bold"
+        myTitle:rightSearch="@mipmap/share_btn"
+        myTitle:title="分类">
+    </com.txs.custom.CustomTitleActivity>
+
+    <com.txs.custom.Custom_item
+        android:id="@+id/newsIntroduce_item"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/newsIntroduce_top_title">
+
+    </com.txs.custom.Custom_item>
+
+
+</RelativeLayout>

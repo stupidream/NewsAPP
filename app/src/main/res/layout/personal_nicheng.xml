@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/rRoot"
+              android:orientation="vertical"
+              android:background="#00ffffff"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+    >
+    <LinearLayout
+        android:background="@drawable/nicheng_cir"
+        android:layout_width="340dp"
+        android:layout_height="180dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="修改昵称"
+             android:gravity="center"
+             android:textColor="#BEBEBE"
+             android:textSize="18sp"
+             />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/shu_nicheng"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/text_border"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#e5e5e5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+            <Button
+                android:id="@+id/quxiao"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="@color/pickerview_timebtn_nor"
+                android:background="@null"
+                android:onClick="onClickEvent"
+                />
+            <Button
+                android:id="@+id/queren"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:textColor="@color/pickerview_timebtn_nor"
+                android:background="@null"
+                android:onClick="onClickEvent"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

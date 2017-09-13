@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myTitle="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.txs.custom.CustomTitleActivity
+        android:id="@+id/classify_top_title"
+        myTitle:leftSrc="@mipmap/back"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    </com.txs.custom.CustomTitleActivity>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dip"
+        android:progressDrawable="@drawable/selector_pg_bar"
+        android:visibility="gone"
+        />
+    <WebView
+        android:id="@+id/newDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

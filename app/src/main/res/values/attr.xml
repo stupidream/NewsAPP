@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTitleActivity">
+        <attr name="title" format="string"/>
+        <attr name="Visibility" format="integer"/>
+        <attr name="orderSrc" format="reference"/>
+        <attr name="rightSearch" format="reference"/>
+        <attr name="leftSrc" format="reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="Custom_item">
+        <attr name="title_item" format="string"/>
+        <attr name="brief" format="string"/>
+    </declare-styleable>
+</resources>

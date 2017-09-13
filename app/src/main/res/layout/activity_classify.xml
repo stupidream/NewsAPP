@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_classify"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myTitle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_95_alpha"
+    tools:context="com.txs.ClassifyActivity">
+
+    <com.txs.custom.CustomTitleActivity
+        android:id="@+id/classify_top_title"
+        myTitle:title="分类"
+        myTitle:rightSearch="@mipmap/search_head"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+    </com.txs.custom.CustomTitleActivity>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/classify_top_title">
+
+        <RadioGroup
+            android:id="@+id/classify_lLayout_left"
+            android:layout_width="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <RadioButton
+                android:id="@+id/guonei"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:checked="true"
+                android:button="@drawable/selector_sort"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:text="国内"/>
+
+            <RadioButton
+                android:id="@+id/guowai"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:button="@drawable/selector_sort"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:text="国外"/>
+
+            <RadioButton
+                android:id="@+id/keji"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:button="@drawable/selector_sort"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:text="科技"/>
+
+            <RadioButton
+                android:id="@+id/junshi"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:button="@drawable/selector_sort"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:text="军事"/>
+
+            <RadioButton
+                android:id="@+id/shehui"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:button="@drawable/selector_sort"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:text="社会"/>
+
+            <RadioButton
+                android:id="@+id/tiyu"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:button="@drawable/selector_sort"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:text="体育"/>
+
+            <RadioButton
+                android:id="@+id/jiaoyu"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:button="@drawable/selector_sort"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:text="教育"/>
+
+        </RadioGroup>
+
+
+        <RelativeLayout
+            android:id="@+id/classify_rLayout_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/classify_lLayout_left"
+            >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@color/second_pager_bg"/>
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/sortRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/classify_recycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

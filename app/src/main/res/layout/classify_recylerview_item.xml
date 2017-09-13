@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                >
+
+
+                <TextView
+                    style="@style/txt_textColor_alert_msg_14sp"
+                    android:id="@+id/txt_left_title"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sim_iv_pic"
+                    android:layout_below="@+id/txt_left_title"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    fresco:roundingBorderWidth="1dp"
+                    fresco:roundingBorderColor="@color/color_999999"
+                    fresco:actualImageScaleType="centerInside"
+                    fresco:roundAsCircle="true"
+                    />
+
+
+                <TextView
+                    style="@style/txt_primary_text_disabled_material_light_11sp"
+                    android:id="@+id/txt_brief"
+                    android:layout_toRightOf="@+id/sim_iv_pic"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:button="@null"
+                    android:background="@drawable/classify_btn_drawable"
+                    android:id="@+id/ch_order"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/second_pager_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+</RelativeLayout>

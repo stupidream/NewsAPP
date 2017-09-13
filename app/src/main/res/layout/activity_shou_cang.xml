@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_shou_cang"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:orientation="vertical">
+        <RelativeLayout
+            android:background="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageButton
+                android:id="@+id/ib_back"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/back"
+                android:background="#FFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickEvent"/>
+            <TextView
+                android:text="收藏夹"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp">
+
+    </RelativeLayout>
+            <RelativeLayout
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bt_addsc"
+                    android:background="#FFF"
+                    android:layout_centerInParent="true"
+                    android:text="创建收藏夹"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageButton
+                    android:background="#FFF"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/bt_addsc"
+                    android:layout_toStartOf="@+id/bt_addsc"
+                    android:layout_marginEnd="15dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp">
+            </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="XXX的收藏夹"
+            android:background="#FFF"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:background="#FFF"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/back_right_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

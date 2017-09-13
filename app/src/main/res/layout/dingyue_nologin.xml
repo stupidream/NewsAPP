@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_order"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myTitle="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_4ddddddd"
+    tools:context="com.txs.ui.OrderActivity">
+
+    <com.txs.custom.CustomTitleActivity
+        android:id="@+id/custom_order"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        myTitle:leftSrc="@mipmap/add_bold"
+        myTitle:title="订阅">
+    </com.txs.custom.CustomTitleActivity>
+
+    <TextView
+        android:id="@+id/txt_order_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:text="全部"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/txt_order_bri"
+        style="@style/txt_textColor_alert_msg_14sp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/custom_order"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_FFFFFF"
+        android:gravity="center"
+        android:text="登录可以订阅喜欢的内容"/>
+
+
+    <ImageView
+        android:id="@+id/iv_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_order_bri"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:onClick="onClickEvent"
+        android:src="@mipmap/login_btn_200"/>
+
+
+</RelativeLayout>
